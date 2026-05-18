@@ -24,7 +24,8 @@ jobs:
 
     - name: Ejecutar contenedor
       run: |
-        docker run -d -p 8080:80 --name web practicacicd:v1 || true
+        #docker run -d -p 8080:80 --name web practicacicd:v1 || true
+        docker run -d -p 8080:80 --name web practicacicd:v1
 
     - name: Verificar contenedor
       run: docker ps
